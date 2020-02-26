@@ -31,6 +31,14 @@
       "color": "red",
       "price": 55000,
       "id": 4
+    },
+    {
+      "make": "Nissan",
+      "model": "GT-R",
+      "year": 2017,
+      "color": "navy",
+      "price": 85000,
+      "id": 5
     }
   ]
 }
