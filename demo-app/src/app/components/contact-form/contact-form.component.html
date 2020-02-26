@@ -1,0 +1,33 @@
+<form [formGroup]="contactForm">
+
+  <div>{{contactForm.errors | json}}</div>
+
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <!-- <span>Please enter your name!</span> -->
+    <!-- <span *ngIf="contactForm.get('name').errors.required && contactForm.get('name').touched">Please enter your name!</span> -->
+    <span *ngIf="nameValid">Please enter your name!</span>
+  </div>
+
+  <div>
+    <label>Age</label>
+    <input type="number" formControlName="age">
+  </div>
+
+  <div>
+    <label>Phone</label>
+    <input type="text" formControlName="phone">
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="text" formControlName="email">
+  </div>
+
+  <div>
+      <label>Color</label>
+      <input type="text" formControlName="color">
+  </div>
+
+</form>
