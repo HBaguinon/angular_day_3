@@ -6,7 +6,8 @@
     <label>Name</label>
     <input type="text" formControlName="name">
     <!-- <span>Please enter your name!</span> -->
-    <!-- <span *ngIf="contactForm.get('name').errors.required && contactForm.get('name').touched">Please enter your name!</span> -->
+    <!-- <span *ngIf="contactForm.get('name').errors.required &&
+      contactForm.get('name').touched">Please enter your name!</span> -->
     <span *ngIf="nameValid">Please enter your name!</span>
   </div>
 

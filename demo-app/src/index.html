@@ -13,11 +13,11 @@
   <script>
 
     // function outer() {
-    
+
     //   let t = 2;
 
     //   setTimeout(() => {
-      
+
     //     t = 4;
 
     //   }, 2000);
@@ -36,9 +36,9 @@
     // console.dir(innerFn);
 
     // setTimeout(() => {
-    
+
     //   console.log('a');
-    
+
     // }, 0);
 
     // console.log('b');
@@ -54,14 +54,14 @@
     // }, 2000);
 
     // const youngMan = new Promise(function youngLady(resolve, reject) {
-    
+
     //   setTimeout(() => {
     //     // console.log('she says yes to the dress');
     //     console.log('she says yes to the dress with someone else!');
     //     // resolve('she says because they get along well...');
     //     reject('she fell in love with his best friend...');
     //   }, 2000);
-    
+
     // });
 
     // youngMan
@@ -76,6 +76,38 @@
 
     // console.log('young man is waiting...');
 
+    // MVC is fine for MVC-style webpages, but terrible for Facebook
+    // which is more like a desktop application running in the browser
+    // This is why Redux and ngrx exists. Otherwise the state exists
+    // all over the place. Data would come in on one side and model
+    // data would be everywhere which would trigger things all over
+    // the place. So they developed a new pattern: what React uses.
+    // Model updates the UI, UI calls function that updates Model.
+    // The model name is Flux, like Flux Capacitor from Back to the
+    // Future. /_\
+    //                - Action <- - - - - -
+    //               |                     |
+    //               \/                    |
+    // Action -> Dispatcher -> Store -> Component
+    //                         Store -> Component
+    //                         Store -> Component
+    // A user Store could be product
+    // Redux is a little different. Less Stores. Dispatcher combined
+    // with the Store.
+    //                - Action <- - - - - -
+    //               |                     |
+    //            ___\/________________    |
+    // Action -> | Dispatcher -> Store | -> Component
+    //           |_____________________| -> Component
+    //                                   -> Component
+    // NGRX
+    //
+    // DB <- - - - -  - Action <- - - - - -
+    //   \Action    |                     |
+    //          \ ___\/________________    |
+    // Action -> | Dispatcher -> Store | -> Component
+    //           |_____________________| -> Component
+    //                                   -> Component
 
 
   </script>
