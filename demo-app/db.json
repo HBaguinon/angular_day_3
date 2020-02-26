@@ -9,16 +9,16 @@
       "price": 45000
     },
     {
-      "id": 2,
       "make": "Tesla",
-      "model": "S",
+      "model": "Model S",
       "year": 2018,
       "color": "red",
-      "price": 100000
+      "price": 100000,
+      "id": 2
     },
     {
       "make": "Telsa",
-      "model": "S",
+      "model": "Model 3",
       "year": 2020,
       "color": "red",
       "price": 5000,
@@ -39,6 +39,22 @@
       "color": "navy",
       "price": 85000,
       "id": 5
+    },
+    {
+      "make": "Toyota",
+      "model": "Celica GT-Four",
+      "year": 1997,
+      "color": "black",
+      "price": 6000,
+      "id": 6
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Lancer Evolution",
+      "year": 1998,
+      "color": "white",
+      "price": 32000,
+      "id": 7
     }
   ]
 }
